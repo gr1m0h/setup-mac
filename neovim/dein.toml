@@ -1,0 +1,25 @@
+# plugin manager
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# editorconfig
+# editorconfig for vim
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+# markdown
+# syntax file type markdown
+#[[plugins]]
+#repo = 'plasticboy/vim-markdown'
+
+# preview markdown on browser
+[[plugins]]
+repo = 'previm/previm'
+hook_add = '''
+	source ~/.config/nvim/plugins/previm/previm.vim
+'''
+
+# toml
+# syntax file type toml
+[[plugins]]
+repo = 'cespare/vim-toml'
