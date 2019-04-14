@@ -1,0 +1,7 @@
+golang 1.12.1
+jq 1.6
+kubectl 1.14.0
+kubectx v0.6.3
+nodejs 11.13.0
+terraform 0.11.13
+python 3.7.2
