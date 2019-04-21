@@ -2,6 +2,25 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# language server protocol
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+	source ~/.config/nvim/plugins/vim-lsp.vim
+'''
+
+# async auto complete
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+# auto complete plugin
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+# auto complete for lsp
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
 # editorconfig
 # editorconfig for vim
 [[plugins]]
@@ -9,8 +28,8 @@ repo = 'editorconfig/editorconfig-vim'
 
 # markdown
 # syntax file type markdown
-#[[plugins]]
-#repo = 'plasticboy/vim-markdown'
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
 
 # preview markdown on browser
 [[plugins]]
@@ -19,7 +38,31 @@ hook_add = '''
 	source ~/.config/nvim/plugins/previm/previm.vim
 '''
 
+# fish
+# syntax file type fish
+[[plugins]]
+repo = 'dag/vim-fish'
+
 # toml
 # syntax file type toml
 [[plugins]]
 repo = 'cespare/vim-toml'
+
+# go
+# go command use as vim command :GoBuild, :GoInstall
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+	source ~/.config/nvim/plugins/vim-go.vim
+'''
+
+# go completion
+[[plugins]]
+repo = 'zchee/deoplete-go'
+build = 'make'
+on_ft = 'go'
+depends = ['deoplete.nvim']
+hook_add = '''
+	let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+'''
