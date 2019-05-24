@@ -20,31 +20,33 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
-
 "End dein Scripts-------------------------
 
-set encoding=utf-8
+se encoding=utf-8
 scriptencoding utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-boms,utf-8,euc-jp,cp932
-set fileformats=unix,dos,mac
+se fileencoding=utf-8
+se fileencodings=ucs-boms,utf-8,euc-jp,cp932
+se fileformats=unix,dos,mac
 
-set number
-set wrap
+" set colorscheme
+colorscheme dracula
 
-set noexpandtab
-set tabstop=4
-set shiftwidth=4
-set autoindent
-set hls
+se number
+se wrap
 
-set noswapfile
-set nobackup
-set noundofile
+se noexpandtab
+se tabstop=4
+se shiftwidth=4
+se autoindent
+se smartindent
+se mouse=a
+se cursorline
+se hlsearch
+se wildmenu
 
-set clipboard=unnamed
-set shortmess+=I
+se noswapfile
+se nobackup
+se noundofile
 
-imap { {}<LEFT>
-imap ( ()<LEFT>
-imap [ []<LEFT>
+se clipboard=unnamed
+se shortmess+=I
