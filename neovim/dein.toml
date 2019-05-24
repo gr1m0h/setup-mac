@@ -2,25 +2,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# language server protocol
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-hook_add = '''
-	source ~/.config/nvim/plugins/vim-lsp.vim
-'''
-
-# async auto complete
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-# auto complete plugin
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-
-# auto complete for lsp
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-
 # editorconfig
 # editorconfig for vim
 [[plugins]]
@@ -30,6 +11,9 @@ repo = 'editorconfig/editorconfig-vim'
 # syntax file type markdown
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
+hook_add = '''
+	source ~/.config/nvim/plugins/vim-markdown.vim
+'''
 
 # preview markdown on browser
 [[plugins]]
@@ -48,6 +32,14 @@ repo = 'dag/vim-fish'
 [[plugins]]
 repo = 'cespare/vim-toml'
 
+# terraform
+# syntax file type terraform
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+hook_add = '''
+	let g:terraform_fmt_on_save = 1
+'''
+
 # go
 # go command use as vim command :GoBuild, :GoInstall
 [[plugins]]
@@ -57,12 +49,6 @@ hook_add = '''
 	source ~/.config/nvim/plugins/vim-go.vim
 '''
 
-# go completion
+# color sheme
 [[plugins]]
-repo = 'zchee/deoplete-go'
-build = 'make'
-on_ft = 'go'
-depends = ['deoplete.nvim']
-hook_add = '''
-	let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
-'''
+repo = 'dracula/vim'
