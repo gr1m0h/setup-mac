@@ -27,6 +27,7 @@ fi
 
 echo "# install packages"
 PACKAGES=(
+	ccat
 	coreutils
 	autoconf
 	automake
@@ -38,6 +39,7 @@ PACKAGES=(
 	unixodbc
 	gpg
 	zlib
+	gometalinter
 )
 
 brew install "${PACKAGES[@]}" || :
@@ -153,7 +155,7 @@ sh fonts/install.sh
 rm -rf fonts
 
 echo "# install fisher plugins(bobthefish, bass)"
-fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass"
+fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass;and fisher add jethrokuan/z"
 
 echo "# setup"
 cd $dotfiles/fish
