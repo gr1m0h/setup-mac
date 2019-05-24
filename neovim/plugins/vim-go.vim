@@ -11,9 +11,7 @@ let g:go_term_mode = 'split'
 let g:go_addtags_transform = "camelcase"
 
 " Highlight 'err'
-autocmd FileType go :highlight goErr cterm=bold ctermfg=214
 autocmd FileType go :match goErr /\<err\>/
-
 
 " Key mapping
 augroup GoMapping
