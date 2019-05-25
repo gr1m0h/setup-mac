@@ -15,6 +15,13 @@ depends = ['dracula/vim']
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+# set indent line
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+	set list listchars=tab:\┆\ 
+'''
+
 # editorconfig
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
