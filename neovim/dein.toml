@@ -2,8 +2,20 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# color sheme
+[[plugins]]
+repo = 'dracula/vim'
+
+# lean & mean status/tabline
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['dracula/vim']
+
+# auto close parentheses
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
 # editorconfig
-# editorconfig for vim
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
@@ -23,17 +35,14 @@ hook_add = '''
 '''
 
 # fish
-# syntax file type fish
 [[plugins]]
 repo = 'dag/vim-fish'
 
 # toml
-# syntax file type toml
 [[plugins]]
 repo = 'cespare/vim-toml'
 
 # terraform
-# syntax file type terraform
 [[plugins]]
 repo = 'hashivim/vim-terraform'
 hook_add = '''
@@ -48,7 +57,3 @@ on_ft = 'go'
 hook_add = '''
 	source ~/.config/nvim/plugins/vim-go.vim
 '''
-
-# color sheme
-[[plugins]]
-repo = 'dracula/vim'
