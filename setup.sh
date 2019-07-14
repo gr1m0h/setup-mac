@@ -27,7 +27,6 @@ fi
 
 echo "# install packages"
 PACKAGES=(
-	ccat
 	coreutils
 	autoconf
 	automake
@@ -103,6 +102,7 @@ bash setup.sh
 asdf update
 
 echo "# add plugins(golang, python, nodejs, terraform, kubectl, kubectx, jq)"
+asdf plugin-add ccat
 asdf plugin-add golang
 asdf plugin-add python
 asdf plugin-add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
