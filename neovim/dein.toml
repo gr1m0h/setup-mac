@@ -26,14 +26,6 @@ hook_add = '''
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
-# markdown
-# syntax file type markdown
-[[plugins]]
-repo = 'plasticboy/vim-markdown'
-hook_add = '''
-	source ~/.config/nvim/plugins/vim-markdown.vim
-'''
-
 # preview markdown on browser
 [[plugins]]
 repo = 'previm/previm'
