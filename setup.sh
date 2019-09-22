@@ -101,7 +101,7 @@ bash setup.sh
 . ~/.asdf/completions/asdf.bash
 asdf update
 
-echo "# add plugins(golang, python, nodejs, terraform, kubectl, kubectx, jq)"
+echo "# add plugins(golang, python, nodejs, terraform, kubectl, kubectx, kustomize, yarn, ccat, jq)"
 asdf plugin-add ccat
 asdf plugin-add golang
 asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
@@ -156,7 +156,7 @@ git clone https://github.com/powerline/fonts.git --depth=1
 sh fonts/install.sh
 rm -rf fonts
 
-echo "# install fisher plugins(bobthefish, bass)"
+echo "# install fisher plugins(bobthefish, bass, z, fish-humanize-duration, done)"
 fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass;and fisher add jethrokuan/z;and fisher add fishpkg/fish-humanize-duration;and fisher add franciscolourenco/done"
 
 echo "# setup"
