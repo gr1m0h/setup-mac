@@ -157,7 +157,7 @@ sh fonts/install.sh
 rm -rf fonts
 
 echo "# install fisher plugins(bobthefish, bass)"
-fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass;and fisher add jethrokuan/z"
+fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass;and fisher add jethrokuan/z;and fisher add fishpkg/fish-humanize-duration;and fisher add franciscolourenco/done"
 
 echo "# setup"
 cd $dotfiles/fish

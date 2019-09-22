@@ -17,3 +17,11 @@ curl -fL https://raw.githubusercontent.com/grimoh117/dotfiles/master/setup.sh -o
 * [asdf-terraform](https://github.com/Banno/asdf-hashicorp)
 * [asdf-python](https://github.com/danhper/asdf-python)
 * [asdf-yarn](https://github.com/twuni/asdf-yarn)
+
+### [fish-shell](http://fishshell.com/)
+* [Fisher](https://github.com/jorgebucaran/fisher)
+* [Bass](https://github.com/edc/bass)
+* [fish-humanize-duration](https://github.com/fishpkg/fish-humanize-duration)
+* [Done](https://github.com/franciscolourenco/done)
+* [Z](https://github.com/jethrokuan/z)
+* [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)
