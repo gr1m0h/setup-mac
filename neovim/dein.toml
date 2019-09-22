@@ -41,13 +41,6 @@ repo = 'dag/vim-fish'
 [[plugins]]
 repo = 'cespare/vim-toml'
 
-# terraform
-[[plugins]]
-repo = 'hashivim/vim-terraform'
-hook_add = '''
-	let g:terraform_fmt_on_save = 1
-'''
-
 # go
 # go command use as vim command :GoBuild, :GoInstall
 [[plugins]]
