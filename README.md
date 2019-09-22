@@ -18,6 +18,18 @@ curl -fL https://raw.githubusercontent.com/grimoh117/dotfiles/master/setup.sh -o
 * [asdf-python](https://github.com/danhper/asdf-python)
 * [asdf-yarn](https://github.com/twuni/asdf-yarn)
 
+### [neovim](https://neovim.io/)
+* [dein.vim](https://github.com/Shougo/dein.vim)
+* [Dracula for Vim](https://github.com/dracula/vim)
+* [vim-airline](https://github.com/vim-airline/vim-airline)
+* [lexima.vim](https://github.com/cohama/lexima.vim)
+* [indentLine](https://github.com/Yggdroot/indentLine)
+* [EditorConfig Vim Plugin](https://github.com/editorconfig/editorconfig-vim)
+* [Previm](https://github.com/previm/previm)
+* [vim-fish](https://github.com/dag/vim-fish)
+* [vim-toml](https://github.com/cespare/vim-toml)
+* [vim-go](https://github.com/fatih/vim-go)
+
 ### [fish-shell](http://fishshell.com/)
 * [Fisher](https://github.com/jorgebucaran/fisher)
 * [Bass](https://github.com/edc/bass)
