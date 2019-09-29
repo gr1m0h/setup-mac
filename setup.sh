@@ -101,8 +101,7 @@ bash setup.sh
 . ~/.asdf/completions/asdf.bash
 asdf update
 
-echo "# add plugins(golang, python, nodejs, terraform, kubectl, kubectx, kustomize, yarn, ccat, jq)"
-asdf plugin-add ccat
+asdf plugin-add ccat https://github.com/grimoh117/asdf-ccat.git
 asdf plugin-add golang
 asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
 asdf plugin-add kubectl
