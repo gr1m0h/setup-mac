@@ -43,6 +43,16 @@ PACKAGES=(
 
 brew install "${PACKAGES[@]}" || :
 
+echo "# install apps"
+APPS=(
+	docker
+	google-chrome
+	slack
+	drawio
+)
+
+brew cask install "${APPS[@]}" || :
+
 cat <<EOS
 #####################################
 # git
