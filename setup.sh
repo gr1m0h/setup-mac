@@ -50,6 +50,7 @@ APPS=(
 	google-chrome
 	slack
 	drawio
+	minikube
 )
 
 brew cask install "${APPS[@]}" || :
@@ -116,6 +117,7 @@ asdf plugin-add ccat https://github.com/grimoh117/asdf-ccat.git
 asdf plugin-add golang
 asdf plugin-add ghq https://github.com/ryodocx/asdf-ghq.git
 asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
+asdf plugin-add kind https://github.com/looztra/asdf-kind
 asdf plugin-add kubectl
 asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 asdf plugin-add kustomize
