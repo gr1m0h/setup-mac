@@ -38,6 +38,7 @@ PACKAGES=(
 	unixodbc
 	gpg
 	zlib
+	starship
 	gometalinter
 )
 
@@ -63,7 +64,7 @@ echo "# install"
 brew install git
 
 echo "# setup"
-GITNAME=${1:-"grimoh117"}
+GITNAME=${1:-"grimoh"}
 GITEMAIL=${2:-"email@grimoh.com"}
 git config --global user.name "${GITNAME}"
 git config --global user.email "${GITEMAIL}"
@@ -160,13 +161,8 @@ if ! ( type "fisher" > /dev/null 2>&1 ); then
 	curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 fi
 
-echo "# install powerline font"
-git clone https://github.com/powerline/fonts.git --depth=1
-sh fonts/install.sh
-rm -rf fonts
-
-echo "# install fisher plugins(bobthefish, bass, z, fish-humanize-duration, done)"
-fish -C "fisher add oh-my-fish/theme-bobthefish;and fisher add edc/bass;and fisher add jethrokuan/z;and fisher add fishpkg/fish-humanize-duration;and fisher add franciscolourenco/done"
+echo "# install fisher plugins(bass, z, fish-humanize-duration, done)"
+fish -C "fisher add edc/bass;and fisher add jethrokuan/z;and fisher add fishpkg/fish-humanize-duration;and fisher add franciscolourenco/done"
 
 echo "# setup"
 cd $dotfiles/fish
