@@ -9,6 +9,7 @@ curl -fL https://raw.githubusercontent.com/grimoh117/dotfiles/master/setup.sh -o
 ### [asdf-vm](https://asdf-vm.com/)
 * [asdf-ccat](https://github.com/grimoh117/asdf-ccat)
 * [asdf-golang](https://github.com/kennyp/asdf-golang)
+* [asdf-ghq](https://github.com/ryodocx/asdf-ghq)
 * [asdf-jq](https://github.com/ryodocx/asdf-jq)
 * [asdf-kubectl](https://github.com/Banno/asdf-kubectl)
 * [asdf-kubectx](https://github.com/virtualstaticvoid/asdf-kubectx)
