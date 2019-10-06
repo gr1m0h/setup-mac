@@ -36,4 +36,7 @@ curl -fL https://raw.githubusercontent.com/grimoh117/dotfiles/master/setup.sh -o
 * [fish-humanize-duration](https://github.com/fishpkg/fish-humanize-duration)
 * [Done](https://github.com/franciscolourenco/done)
 * [Z](https://github.com/jethrokuan/z)
-* [bobthefish](https://github.com/oh-my-fish/theme-bobthefish)
+
+### Other
+* [git](https://git-scm.com/)
+* [starship](https://github.com/starship/starship)
