@@ -2,12 +2,12 @@
 
 ## Setup
 ```
-curl -fL https://raw.githubusercontent.com/grimoh117/dotfiles/master/setup.sh -o setup.sh bash setup.sh
+curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o setup.sh bash setup.sh
 ```
 
 ## Used Tools
 ### [asdf-vm](https://asdf-vm.com/)
-* [asdf-ccat](https://github.com/grimoh117/asdf-ccat)
+* [asdf-ccat](https://github.com/grimoh/asdf-ccat)
 * [asdf-golang](https://github.com/kennyp/asdf-golang)
 * [asdf-ghq](https://github.com/ryodocx/asdf-ghq)
 * [asdf-jq](https://github.com/ryodocx/asdf-jq)
