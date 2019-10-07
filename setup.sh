@@ -8,6 +8,9 @@ cat <<EOS
 #####################################
 EOS
 
+echo "# make workspace"
+mkdir ~/Documents/workspace
+
 echo "# install command line tools for xcode"
 xcode-select --install
 
@@ -79,6 +82,8 @@ git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
 git config --global color.ui true
+
+git config --global ghq.root ~/Documents/workspace
 
 cat <<EOS
 #####################################
