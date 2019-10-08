@@ -1,28 +1,29 @@
-# modules
+# modules enabled
 [character]
 error_symbol = "✗"
 use_symbol_for_status = true
 
+[time]
+disabled = false
+
+# modules disabled
 [dotnet]
 disabled = true
 
 [golang]
-disable = true
+disabled = true
+
+[kubernetes]
+disabled = true
 
 [java]
-disable = true
+disabled = true
 
 [nodejs]
-disable = true
+disabled = true
 
 [package]
-disable = true
+disabled = true
 
 [python]
-disable = true
-
-[time]
-disabled = false
-
-[username]
 disabled = true
