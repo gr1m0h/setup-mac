@@ -33,6 +33,13 @@ hook_add = '''
 	source ~/.config/nvim/plugins/previm/previm.vim
 '''
 
+# json
+[[plugins]]
+repo = 'elzr/vim-json'
+hook_add = '''
+	let g:vim_json_syntax_conceal = 0
+'''
+
 # fish
 [[plugins]]
 repo = 'dag/vim-fish'
@@ -40,6 +47,17 @@ repo = 'dag/vim-fish'
 # toml
 [[plugins]]
 repo = 'cespare/vim-toml'
+
+# yaml
+[[plugin]]
+repo = 'chase/vim-ansible-yaml'
+
+# terraform
+[[plugin]]
+repo = 'hashivim/vim-terraform'
+hook_add = '''
+	let g:terraform_fmt_on_save = 1
+'''
 
 # go
 # go command use as vim command :GoBuild, :GoInstall
