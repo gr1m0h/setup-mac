@@ -41,8 +41,8 @@ PACKAGES=(
 	unixodbc
 	gpg
 	zlib
-	starship
 	gometalinter
+	bat
 )
 
 brew install "${PACKAGES[@]}" || :
@@ -51,9 +51,9 @@ echo "# install apps"
 APPS=(
 	docker
 	google-chrome
+	minikube
 	slack
 	drawio
-	minikube
 )
 
 brew cask install "${APPS[@]}" || :
@@ -92,7 +92,7 @@ cat <<EOS
 EOS
 
 echo "# get dotfiles"
-git clone https://github.com/grimoh117/dotfiles.git ~/.dotfiles
+git clone https://github.com/grimoh/dotfiles.git ~/.dotfiles
 dotfiles=~/.dotfiles
 
 echo "# setup bash"
