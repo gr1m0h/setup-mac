@@ -118,17 +118,16 @@ bash setup.sh
 . ~/.asdf/completions/asdf.bash
 asdf update
 
-asdf plugin-add ccat https://github.com/grimoh117/asdf-ccat.git
-asdf plugin-add golang
 asdf plugin-add ghq https://github.com/ryodocx/asdf-ghq.git
+asdf plugin-add golang
 asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
 asdf plugin-add kind https://github.com/looztra/asdf-kind
 asdf plugin-add kubectl
 asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
-asdf plugin-add kustomize
 asdf plugin-add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-asdf plugin-add terraform
 asdf plugin-add python
+asdf plugin-add starship https://github.com/grimoh/asdf-starship.git
+asdf plugin-add terraform
 asdf plugin-add yarn
 
 echo "# install the asdf plugin version"

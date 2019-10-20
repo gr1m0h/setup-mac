@@ -7,17 +7,16 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 
 ## Used Tools
 ### [asdf-vm](https://asdf-vm.com/)
-* [asdf-ccat](https://github.com/grimoh/asdf-ccat)
-* [asdf-golang](https://github.com/kennyp/asdf-golang)
 * [asdf-ghq](https://github.com/ryodocx/asdf-ghq)
+* [asdf-golang](https://github.com/kennyp/asdf-golang)
 * [asdf-jq](https://github.com/ryodocx/asdf-jq)
 * [asdf-kind](https://github.com/looztra/asdf-kind)
 * [asdf-kubectl](https://github.com/Banno/asdf-kubectl)
 * [asdf-kubectx](https://github.com/virtualstaticvoid/asdf-kubectx)
-* [asdf-kustomize](https://github.com/Banno/asdf-kustomize)
 * [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
-* [asdf-terraform](https://github.com/Banno/asdf-hashicorp)
 * [asdf-python](https://github.com/danhper/asdf-python)
+* [asdf-starship](https://github.com/grimoh/asdf-starship)
+* [asdf-terraform](https://github.com/Banno/asdf-hashicorp)
 * [asdf-yarn](https://github.com/twuni/asdf-yarn)
 
 ### [neovim](https://neovim.io/)
@@ -41,4 +40,3 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 
 ### Other
 * [git](https://git-scm.com/)
-* [starship](https://github.com/starship/starship)
