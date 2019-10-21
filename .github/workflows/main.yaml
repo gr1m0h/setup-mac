@@ -1,8 +1,9 @@
 name: CI
 
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
+    branches:
+    - master
     paths:
     - '**.sh'
 
@@ -11,17 +12,9 @@ jobs:
     runs-on: macOS-10.14
     
     steps:
-    - uses: actions/checkout@master
+    - uses: docker://shellcheck-alpine:v0.7.0
     
     - name: Check scripts with shellcheck
-      run: echo Hello, world!
-    - name: Run a multi-line script
       run: |
-        git diff origin/${GITHUB_BASE_REF}..origin/${GITHUB_HEAD_REF} \
-          --diff-filter=AM \
-          --name-only -- '*.sh' \
-          | while read script ; do \
-              shellcheck ${EXCLUDE_OPTS:+-e ${EXCLUDE_OPTS}} $script || \
-              touch error.$$ ; \
-            done
-        test ! -e error.$$
+        find . -type f -name '*.sh' | wc -l
+        find . -type f -name '*.sh' | xargs shellcheck --external-sources
