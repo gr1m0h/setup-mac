@@ -9,12 +9,11 @@ on:
 
 jobs:
   shellcheck:
+    name: shellcheck
     runs-on: macOS-10.14
-    
     steps:
-    - uses: docker://shellcheck-alpine:v0.7.0
-    
     - name: Check scripts with shellcheck
+      uses: docker://shellcheck-alpine:v0.7.0
       run: |
         find . -type f -name '*.sh' | wc -l
         find . -type f -name '*.sh' | xargs shellcheck --external-sources
