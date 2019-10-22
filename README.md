@@ -15,6 +15,7 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * [asdf-kubectx](https://github.com/virtualstaticvoid/asdf-kubectx)
 * [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
 * [asdf-python](https://github.com/danhper/asdf-python)
+* [asdf-shellcheck](https://github.com/luizm/asdf-shellcheck)
 * [asdf-starship](https://github.com/grimoh/asdf-starship)
 * [asdf-terraform](https://github.com/Banno/asdf-hashicorp)
 * [asdf-yarn](https://github.com/twuni/asdf-yarn)

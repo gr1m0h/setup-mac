@@ -126,6 +126,7 @@ asdf plugin-add kubectl
 asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
 asdf plugin-add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf plugin-add python
+asdf plugin-add shellcheck
 asdf plugin-add starship https://github.com/grimoh/asdf-starship.git
 asdf plugin-add terraform
 asdf plugin-add yarn
