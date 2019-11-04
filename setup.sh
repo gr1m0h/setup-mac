@@ -41,8 +41,8 @@ PACKAGES=(
 	unixodbc
 	gpg
 	zlib
+	minikube
 	gometalinter
-	bat
 )
 
 brew install "${PACKAGES[@]}" || :
@@ -50,8 +50,8 @@ brew install "${PACKAGES[@]}" || :
 echo "# install apps"
 APPS=(
 	docker
+	notable
 	google-chrome
-	minikube
 	slack
 	drawio
 )
