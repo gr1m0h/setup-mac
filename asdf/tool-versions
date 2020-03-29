@@ -1,7 +1,8 @@
-
+bitwarden
 ghq 0.12.6
 golang 1.13
 jq 1.6
+k6 0.26.0
 kind v0.5.1
 kubectl 1.16.0
 kubectx v0.7.0
@@ -9,5 +10,6 @@ nodejs 12.10.0
 python 3.7.4
 shellcheck 0.7.0
 starship 0.25.1
+stern 1.11.0
 terraform 0.12.9
 yarn 1.17.3
