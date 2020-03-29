@@ -7,9 +7,12 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 
 ## Used Tools
 ### [asdf-vm](https://asdf-vm.com/)
+* [asdf-bitwarden](https://github.com/vixus0/asdf-bitwarden)
 * [asdf-ghq](https://github.com/ryodocx/asdf-ghq)
+* [asdf-gohugo](https://bitbucket.org/mgladdish/asdf-gohugo)
 * [asdf-golang](https://github.com/kennyp/asdf-golang)
 * [asdf-jq](https://github.com/ryodocx/asdf-jq)
+* [asdf-k6](https://github.com/grimoh/asdf-k6)
 * [asdf-kind](https://github.com/looztra/asdf-kind)
 * [asdf-kubectl](https://github.com/Banno/asdf-kubectl)
 * [asdf-kubectx](https://github.com/virtualstaticvoid/asdf-kubectx)
@@ -17,11 +20,13 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * [asdf-python](https://github.com/danhper/asdf-python)
 * [asdf-shellcheck](https://github.com/luizm/asdf-shellcheck)
 * [asdf-starship](https://github.com/grimoh/asdf-starship)
+* [asdf-stern](https://github.com/looztra/asdf-stern)
 * [asdf-terraform](https://github.com/Banno/asdf-hashicorp)
 * [asdf-yarn](https://github.com/twuni/asdf-yarn)
 
 ### [neovim](https://neovim.io/)
 * [dein.vim](https://github.com/Shougo/dein.vim)
+* [Coc](https://github.com/neoclide/coc.nvim)
 * [Dracula for Vim](https://github.com/dracula/vim)
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [lexima.vim](https://github.com/cohama/lexima.vim)
