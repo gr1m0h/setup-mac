@@ -120,6 +120,7 @@ asdf update
 
 asdf plugin-add bitwarden
 asdf plugin-add ghq https://github.com/ryodocx/asdf-ghq.git
+asdf plugin-add gohugo
 asdf plugin-add golang
 asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
 asdf plugin-add k6
