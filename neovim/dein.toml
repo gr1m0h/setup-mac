@@ -2,6 +2,11 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# complement and lsp client
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+
 # color sheme
 [[plugins]]
 repo = 'dracula/vim'
