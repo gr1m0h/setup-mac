@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lint:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup.sh
+      run: |
+        curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o setup.sh
+        bash setup.sh
