@@ -134,6 +134,7 @@ asdf plugin-add starship
 asdf plugin-add stern
 asdf plugin-add terraform
 asdf plugin-add yarn
+asdf plugin add neovim
 
 echo "# install the asdf plugin version"
 asdf install
@@ -143,9 +144,6 @@ cat <<EOS
 # neovim
 #####################################
 EOS
-
-echo "# install"
-brew install neovim
 
 echo "# install dein"
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
