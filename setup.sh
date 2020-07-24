@@ -119,6 +119,7 @@ bash setup.sh
 . ~/.asdf/completions/asdf.bash
 asdf update
 
+asdf plugin add act https://github.com/grimoh/asdf-act.git
 asdf plugin add bitwarden
 asdf plugin add gcloud
 asdf plugin add ghq
@@ -130,7 +131,6 @@ asdf plugin add kubectl
 asdf plugin add neovim
 asdf plugin add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf plugin add python
-asdf plugin add shellcheck
 asdf plugin add starship
 asdf plugin add stern
 asdf plugin add terraform

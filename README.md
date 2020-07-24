@@ -1,13 +1,16 @@
 # dotfiles
 
 ## Setup
+
 ```
 curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o setup.sh bash setup.sh
 ```
 
 ## Used Tools
+
 ### [asdf-vm](https://asdf-vm.com/)
 
+* act
 * bitwarden
 * gcloud
 * ghq
@@ -19,13 +22,13 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * neovim
 * nodejs
 * python
-* shellcheck
 * starship
 * stern
 * terraform
 * yarn
 
 ### [neovim](https://neovim.io/)
+
 * dein.vim
 * CoC
 * Dracula for Vim
@@ -39,6 +42,7 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * vim-go
 
 ### [fish-shell](http://fishshell.com/)
+
 * Fisher
 * Bass
 * fish-humanize-duration
@@ -46,4 +50,5 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * Z
 
 ### Other
+
 * git
