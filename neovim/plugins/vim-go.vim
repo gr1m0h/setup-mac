@@ -10,13 +10,10 @@ let g:go_term_mode = 'split'
 " Convert to camel case
 let g:go_addtags_transform = "camelcase"
 
-" Highlight 'err'
-autocmd FileType go :match goErr /\<err\>/
-
 " Key mapping
 augroup GoMapping
 	autocmd!
 	autocmd FileType go nmap <leader>r <Plug>(go-run)
-	autocmd FileType go nmap <leader>t <Plug>(go-test)
-	autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+	autocmd FileType go nmap <leader>r <Plug>(go-test)
+	autocmd FileType go nmap <leader>r <Plug>(go-converage-toggle)
 augroup END
