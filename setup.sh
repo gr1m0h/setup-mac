@@ -41,7 +41,6 @@ PACKAGES=(
 	unixodbc
 	gpg
 	zlib
-	minikube
 	gometalinter
 )
 
@@ -49,11 +48,13 @@ brew install "${PACKAGES[@]}" || :
 
 echo "# install apps"
 APPS=(
+	bitwarden
 	docker
-	notable
-	google-chrome
-	slack
 	drawio
+	google-chrome
+	notable
+	slack
+	zoomus
 )
 
 brew cask install "${APPS[@]}" || :
@@ -118,23 +119,22 @@ bash setup.sh
 . ~/.asdf/completions/asdf.bash
 asdf update
 
-asdf plugin-add bitwarden
-asdf plugin-add ghq https://github.com/ryodocx/asdf-ghq.git
-asdf plugin-add gohugo
-asdf plugin-add golang
-asdf plugin-add jq https://github.com/ryodocx/asdf-jq.git
-asdf plugin-add k6
-asdf plugin-add kind
-asdf plugin-add kubectl
-asdf plugin-add kubectx
-asdf plugin-add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-asdf plugin-add python
-asdf plugin-add shellcheck
-asdf plugin-add starship
-asdf plugin-add stern
-asdf plugin-add terraform
-asdf plugin-add yarn
+asdf plugin add bitwarden
+asdf plugin add gcloud
+asdf plugin add ghq
+asdf plugin add gohugo
+asdf plugin add golang
+asdf plugin add jq
+asdf plugin add kind
+asdf plugin add kubectl
 asdf plugin add neovim
+asdf plugin add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+asdf plugin add python
+asdf plugin add shellcheck
+asdf plugin add starship
+asdf plugin add stern
+asdf plugin add terraform
+asdf plugin add yarn
 
 echo "# install the asdf plugin version"
 asdf install
@@ -178,6 +178,16 @@ echo "# setup"
 cd $dotfiles/fish
 bash setup.sh
 source ~/.bashrc
+
+cat <<EOS
+#####################################
+# starship
+#####################################
+EOS
+
+echo "# setup"
+cd $dotfiles/starship
+bash setup.sh
 
 cd
 rm -rf .dotfiles
