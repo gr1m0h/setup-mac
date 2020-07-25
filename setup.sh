@@ -123,6 +123,7 @@ asdf plugin add act https://github.com/grimoh/asdf-act.git
 asdf plugin add bitwarden
 asdf plugin add gcloud
 asdf plugin add ghq
+asdf plugin add glow https://github.com/grimoh/asdf-glow.git
 asdf plugin add gohugo
 asdf plugin add golang
 asdf plugin add jq

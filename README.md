@@ -14,6 +14,7 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * bitwarden
 * gcloud
 * ghq
+* glow
 * gohugo
 * golang
 * jq
@@ -36,6 +37,7 @@ curl -fL https://raw.githubusercontent.com/grimoh/dotfiles/master/setup.sh -o se
 * lexima.vim
 * indentLine
 * EditorConfig Vim Plugin
+* preview-markdown.vim
 * Previm
 * vim-fish
 * vim-toml

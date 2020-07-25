@@ -27,6 +27,13 @@ hook_add = '''
 	set list listchars=tab:\┆\ 
 '''
 
+# preview markdown on terminal
+[[plugins]]
+repo = 'skanehira/preview-markdown.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/preview-markdown.vim
+'''
+
 # editorconfig
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
@@ -63,6 +70,7 @@ on_ft = ['yaml', 'yml']
 # terraform
 [[plugin]]
 repo = 'hashivim/vim-terraform'
+on_ft = ['hcl', 'tf']
 hook_add = '''
 	let g:terraform_fmt_on_save = 1
 '''
