@@ -63,14 +63,14 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 # yaml
-[[plugin]]
+[[plugins]]
 repo = 'chase/vim-ansible-yaml'
 on_ft = ['yaml', 'yml']
 
 # terraform
-[[plugin]]
+[[plugins]]
 repo = 'hashivim/vim-terraform'
-on_ft = ['hcl', 'tf']
+on_ft = ['hcl', 'tf', 'tfvars']
 hook_add = '''
 	let g:terraform_fmt_on_save = 1
 '''
