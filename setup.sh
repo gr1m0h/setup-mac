@@ -12,7 +12,9 @@ echo "# make workspace"
 mkdir ~/Documents/workspace
 
 echo "# install command line tools for xcode"
-xcode-select --install
+if [ ! -d /Library/Developer/CommandLineTools ]; then
+	xcode-select --install
+fi
 
 echo "# mkdir neovim plugin dir ~/.cache/dein"
 mkdir -p ~/.cache/dein
