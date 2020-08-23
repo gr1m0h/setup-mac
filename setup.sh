@@ -30,18 +30,8 @@ fi
 
 echo "# install packages"
 PACKAGES=(
-	coreutils
-	autoconf
-	automake
-	coreutils
-	libtool
-	libyaml
-	openssl
-	readline
-	unixodbc
-	gpg
-	zlib
-	gometalinter
+	awscli
+	gnupg
 )
 
 brew install "${PACKAGES[@]}" || :
@@ -49,9 +39,9 @@ brew install "${PACKAGES[@]}" || :
 echo "# install apps"
 APPS=(
 	bitwarden
+	brave-browser
 	docker
 	drawio
-	google-chrome
 	notable
 	slack
 	zoomus
@@ -107,6 +97,9 @@ cat <<EOS
 #####################################
 EOS
 
+echo "# install dependencies"
+brew install coreutils
+
 echo "# install if asdf is not installed"
 if [ ! -d ~/.asdf ]; then
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf
@@ -126,6 +119,7 @@ asdf plugin add ghq
 asdf plugin add glow https://github.com/grimoh/asdf-glow.git
 asdf plugin add gohugo
 asdf plugin add golang
+asdf plugin add gosec
 asdf plugin add jq
 asdf plugin add kind
 asdf plugin add kubectl
