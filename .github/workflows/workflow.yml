@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  lint:
+  setup:
     runs-on: macOS-latest
 
     steps:
@@ -15,4 +15,5 @@ jobs:
 
     - name: Run setup.sh
       run: |
-        curl -fL https://raw.githubusercontent.com/grimoh/setup/master/setup.sh -o setup.sh bash setup.sh
+        curl -fL https://raw.githubusercontent.com/grimoh/setup/master/setup.sh -o setup.sh
+        bash setup.sh
