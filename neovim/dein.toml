@@ -24,25 +24,27 @@ repo = 'cohama/lexima.vim'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
-	set list listchars=tab:\┆\ 
-'''
-
-# preview markdown on terminal
-[[plugins]]
-repo = 'skanehira/preview-markdown.vim'
-hook_add = '''
-  source ~/.config/nvim/plugins/preview-markdown.vim
+  set list listchars=tab:\┆\
 '''
 
 # editorconfig
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
+# preview markdown on terminal
+# nmap pv :Previewmarkdown<Return>
+[[plugins]]
+repo = 'skanehira/preview-markdown.vim'
+hook_add = '''
+  source ~/.config/nvim/plugins/preview-markdown.vim
+'''
+
 # preview markdown on browser
+# nmap pb :PrevimOpen<Return>
 [[plugins]]
 repo = 'previm/previm'
 hook_add = '''
-	source ~/.config/nvim/plugins/previm/previm.vim
+  source ~/.config/nvim/plugins/previm/previm.vim
 '''
 
 # json
@@ -50,7 +52,7 @@ hook_add = '''
 repo = 'elzr/vim-json'
 on_ft = ['json']
 hook_add = '''
-	let g:vim_json_syntax_conceal = 0
+  let g:vim_json_syntax_conceal = 0
 '''
 
 # fish
@@ -72,14 +74,5 @@ on_ft = ['yaml', 'yml']
 repo = 'hashivim/vim-terraform'
 on_ft = ['hcl', 'tf', 'tfvars']
 hook_add = '''
-	let g:terraform_fmt_on_save = 1
-'''
-
-# go
-# go command use as vim command :GoBuild, :GoInstall
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = 'go'
-hook_add = '''
-	source ~/.config/nvim/plugins/vim-go.vim
+  let g:terraform_fmt_on_save = 1
 '''
