@@ -78,18 +78,69 @@ git config --global ghq.root ~/Documents/workspace
 
 cat <<EOS
 #####################################
-# dotfiles
+# setup
 #####################################
 EOS
 
-echo "# get dotfiles"
-git clone https://github.com/grimoh/dotfiles.git ~/.dotfiles
-dotfiles=~/.dotfiles
+echo "# get setup"
+git clone https://github.com/grimoh/setup.git ~/.setup
+setup=~/.setup
 
 echo "# setup bash"
-cd $dotfiles/bash
+cd $setup/bash
 bash setup.sh
 . ~/.bashrc
+
+cat <<EOS
+#####################################
+# fish
+#####################################
+EOS
+
+echo "# install"
+brew install fish
+
+echo "# install if fisher is not installed"
+if ! ( type "fisher" > /dev/null 2>&1 ); then
+	curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fi
+
+echo "# install fisher plugins(bass, z, fish-humanize-duration, done)"
+fish -C "fisher add decors/fish-ghq;and fisher add edc/bass;and fisher add franciscolourenco/done;and fisher add jethrokuan/fzf;and fisher add jethrokuan/z;"
+
+echo "# setup"
+cd $setup/fish
+bash setup.sh
+source ~/.bashrc
+
+cat <<EOS
+#####################################
+# starship
+#####################################
+EOS
+
+echo "# setup"
+cd $setup/starship
+bash setup.sh
+cat <<EOS
+
+cat <<EOS
+#####################################
+# neovim
+#####################################
+EOS
+
+echo "# install dein"
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh installer.sh ~/.cache/dein
+rm installer.sh
+
+echo "# setup"
+cd $setup/neovim
+bash setup.sh
+
+echo "# run neovim"
+nvim
 
 cat <<EOS
 #####################################
@@ -106,7 +157,7 @@ if [ ! -d ~/.asdf ]; then
 fi
 
 echo "# setup"
-cd $dotfiles/asdf
+cd $setup/asdf
 bash setup.sh
 . ~/.asdf/asdf.sh
 . ~/.asdf/completions/asdf.bash
@@ -134,56 +185,6 @@ asdf plugin add yarn
 echo "# install the asdf plugin version"
 asdf install
 
-cat <<EOS
-#####################################
-# neovim
-#####################################
-EOS
-
-echo "# install dein"
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh installer.sh ~/.cache/dein
-rm installer.sh
-
-echo "# setup"
-cd $dotfiles/neovim
-bash setup.sh
-
-echo "# run neovim"
-nvim
-
-cat <<EOS
-#####################################
-# fish
-#####################################
-EOS
-
-echo "# install"
-brew install fish
-
-echo "# install if fisher is not installed"
-if ! ( type "fisher" > /dev/null 2>&1 ); then
-	curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-fi
-
-echo "# install fisher plugins(bass, z, fish-humanize-duration, done)"
-fish -C "fisher add edc/bass;and fisher add jethrokuan/z;and fisher add fishpkg/fish-humanize-duration;and fisher add franciscolourenco/done"
-
-echo "# setup"
-cd $dotfiles/fish
-bash setup.sh
-source ~/.bashrc
-
-cat <<EOS
-#####################################
-# starship
-#####################################
-EOS
-
-echo "# setup"
-cd $dotfiles/starship
-bash setup.sh
-
 cd
-rm -rf .dotfiles
+rm -rf .setup
 echo "# setup completed"
