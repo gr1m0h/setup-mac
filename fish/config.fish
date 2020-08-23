@@ -1,7 +1,3 @@
-# use starship
-eval (starship init fish)
-
-# env
 set -x fish_greeting
 
 # alias
