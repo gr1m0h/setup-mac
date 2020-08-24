@@ -34,6 +34,7 @@ echo "# install packages"
 PACKAGES=(
 	awscli
 	gnupg
+	tig
 )
 
 brew install "${PACKAGES[@]}" || :
