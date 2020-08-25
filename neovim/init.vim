@@ -39,7 +39,7 @@ se tabstop=4
 se shiftwidth=4
 se autoindent
 se smartindent
-se mouse=a
+" se mouse=a
 se cursorline
 se hlsearch
 se wildmenu
@@ -50,3 +50,5 @@ se noundofile
 
 se clipboard=unnamed
 se shortmess+=I
+
+let g:python3_host_prog = '/Users/grimoh117/.asdf/shims/python3'
