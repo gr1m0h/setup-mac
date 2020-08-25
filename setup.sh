@@ -172,13 +172,14 @@ asdf plugin add ghq
 asdf plugin add glow https://github.com/grimoh/asdf-glow.git
 asdf plugin add gohugo
 asdf plugin add golang
-asdf plugin add gosec
+asdf plugin add gosec https://github.com/grimoh/asdf-gosec.git
 asdf plugin add jq
 asdf plugin add kind
 asdf plugin add kubectl
 asdf plugin add neovim
 asdf plugin add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf plugin add python
+asdf plugin add ripgrep https://github.com/uesyn/asdf-ripgrep.git
 asdf plugin add starship
 asdf plugin add stern
 asdf plugin add terraform
