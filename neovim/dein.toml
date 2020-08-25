@@ -2,6 +2,17 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# easy motion
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-easymotion.vim
+'''
+
+# the ultimate solution for snippets
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
 # complement and lsp client
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -24,7 +35,7 @@ repo = 'cohama/lexima.vim'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
-  set list listchars=tab:\┆\
+  set list listchars=tab:\|\
 '''
 
 # editorconfig
