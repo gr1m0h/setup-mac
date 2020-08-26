@@ -117,17 +117,6 @@ source ~/.bashrc
 
 cat <<EOS
 #####################################
-# starship
-#####################################
-EOS
-
-echo "# setup"
-cd $setup/starship
-bash setup.sh
-cat <<EOS
-
-cat <<EOS
-#####################################
 # neovim
 #####################################
 EOS
@@ -187,6 +176,16 @@ asdf plugin add yarn
 
 echo "# install the asdf plugin version"
 asdf install
+
+cat <<EOS
+#####################################
+# starship
+#####################################
+EOS
+
+echo "# setup"
+cd $setup/starship
+bash setup.sh
 
 cd
 rm -rf .setup
