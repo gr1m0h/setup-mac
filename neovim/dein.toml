@@ -2,17 +2,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# easy motion
-[[plugins]]
-repo = 'easymotion/vim-easymotion'
-hook_add = '''
-  source ~/.config/nvim/plugins/vim-easymotion.vim
-'''
-
-# the ultimate solution for snippets
-[[plugins]]
-repo = 'SirVer/ultisnips'
-
 # complement and lsp client
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -58,27 +47,30 @@ hook_add = '''
   source ~/.config/nvim/plugins/previm/previm.vim
 '''
 
-# json
+# easy motion
 [[plugins]]
-repo = 'elzr/vim-json'
-on_ft = ['json']
+repo = 'easymotion/vim-easymotion'
 hook_add = '''
-  let g:vim_json_syntax_conceal = 0
+  source ~/.config/nvim/plugins/vim-easymotion.vim
 '''
 
-# fish
+# commented out
 [[plugins]]
-repo = 'dag/vim-fish'
+repo = 'tomtom/tcomment_vim'
 
 # toml
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
-# yaml
+# json
+# for let g:vim_json_syntax_conceal = 0
 [[plugins]]
-repo = 'chase/vim-ansible-yaml'
-on_ft = ['yaml', 'yml']
+repo = 'elzr/vim-json'
+on_ft = ['json']
+hook_add = '''
+  let g:vim_json_syntax_conceal = 0
+'''
 
 # terraform
 [[plugins]]
