@@ -63,6 +63,11 @@ repo = 'tomtom/tcomment_vim'
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
+# fish
+# fir syntax hilighting
+[[plugins]]
+repo = 'dag/vim-fish'
+
 # json
 # for let g:vim_json_syntax_conceal = 0
 [[plugins]]
