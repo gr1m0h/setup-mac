@@ -108,7 +108,7 @@ if ! ( type "fisher" > /dev/null 2>&1 ); then
 fi
 
 echo "# install fisher plugins(bass, z, fish-humanize-duration, done)"
-fish -C "fisher add decors/fish-ghq;and fisher add edc/bass;and fisher add franciscolourenco/done;and fisher add jethrokuan/fzf;and fisher add jethrokuan/z;"
+fish -C "fisher add dracula/fish;and fisher add decors/fish-ghq;and fisher add edc/bass;and fisher add franciscolourenco/done;and fisher add jethrokuan/fzf;and fisher add jethrokuan/z;"
 
 echo "# setup"
 cd $setup/fish
@@ -176,16 +176,6 @@ asdf plugin add yarn
 
 echo "# install the asdf plugin version"
 asdf install
-
-cat <<EOS
-#####################################
-# starship
-#####################################
-EOS
-
-echo "# setup"
-cd $setup/starship
-bash setup.sh
 
 cd
 rm -rf .setup
