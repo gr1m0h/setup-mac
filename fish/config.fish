@@ -44,19 +44,6 @@ alias c="clear"
 alias gpg="LANG=C gpg"
 alias rm="rmtrash"
 
-# neovim
-set -gx XDG_CONFIG_HOME "$HOME/.config"
-alias vi="nvim"
-
-# coc
-alias cocls="npm --prefix=$HOME/.config/coc/extensions/ list --depth=0"
-alias cocin="npm --prefix=$HOME/.config/coc/extensions/ install"
-alias cocrm="npm --prefix=$HOME/.config/coc/extensions/ remove"
-
-# asdf
-source ~/.asdf/asdf.fish
-mkdir -p ~/.config/fish/completions; and cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
-
 # golang
 set -gx GO111MODULE on
 set -gx GOROOT "$HOME/.asdf/installs/golang/1.15/go"
