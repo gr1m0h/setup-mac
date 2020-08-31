@@ -118,24 +118,6 @@ source ~/.bashrc
 
 cat <<EOS
 #####################################
-# neovim
-#####################################
-EOS
-
-echo "# install dein"
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh installer.sh ~/.cache/dein
-rm installer.sh
-
-echo "# setup"
-cd $setup/neovim
-bash setup.sh
-
-echo "# run neovim"
-nvim
-
-cat <<EOS
-#####################################
 # asdf
 #####################################
 EOS
@@ -157,6 +139,7 @@ asdf update
 
 asdf plugin add act https://github.com/grimoh/asdf-act.git
 asdf plugin add bitwarden
+asdf plugin add fzf
 asdf plugin add gcloud
 asdf plugin add ghq
 asdf plugin add glow https://github.com/grimoh/asdf-glow.git
@@ -169,14 +152,30 @@ asdf plugin add kubectl
 asdf plugin add neovim
 asdf plugin add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf plugin add python
-asdf plugin add ripgrep https://github.com/uesyn/asdf-ripgrep.git
-asdf plugin add starship
 asdf plugin add stern
 asdf plugin add terraform
 asdf plugin add yarn
 
 echo "# install the asdf plugin version"
 asdf install
+
+cat <<EOS
+#####################################
+# neovim
+#####################################
+EOS
+
+echo "# install dein"
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh installer.sh ~/.cache/dein
+rm installer.sh
+
+echo "# setup"
+cd $setup/neovim
+bash setup.sh
+
+echo "# run neovim"
+nvim
 
 cd
 rm -rf .setup
