@@ -108,7 +108,7 @@ if ! ( type "fisher" > /dev/null 2>&1 ); then
 	curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 fi
 
-echo "# install fisher plugins(bass, z, fish-humanize-duration, done)"
+echo "# install fisher plugins(fish-ghq, dracula, bass, fish-kubectl-cpmpletions, done, fzf, z)"
 fish -C "fisher add decors/fish-ghq;and fisher add dracula/fish;and fisher add edc/bass;and fisher add evanlucas/fish-kubectl-completions;and fisher add franciscolourenco/done;and fisher add jethrokuan/fzf;and fisher add jethrokuan/z;"
 
 echo "# setup"
