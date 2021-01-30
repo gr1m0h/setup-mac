@@ -109,7 +109,7 @@ if ! ( type "fisher" > /dev/null 2>&1 ); then
 fi
 
 echo "# install fisher plugins(fish-ghq, dracula, bass, fish-kubectl-cpmpletions, done, fzf, z)"
-fish -C "fisher add decors/fish-ghq;and fisher add dracula/fish;and fisher add edc/bass;and fisher add evanlucas/fish-kubectl-completions;and fisher add franciscolourenco/done;and fisher add jethrokuan/fzf;and fisher add jethrokuan/z;"
+fish -C "fisher install decors/fish-ghq;and fisher install dracula/fish;and fisher install edc/bass;and fisher install evanlucas/fish-kubectl-completions;and fisher install franciscolourenco/done;and fisher install jethrokuan/fzf;and fisher install jethrokuan/z;"
 
 echo "# setup"
 cd $setup/fish
