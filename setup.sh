@@ -45,12 +45,13 @@ APPS=(
 	brave-browser
 	docker
 	drawio
-	notable
+	dropbox
 	slack
+	twitch
 	zoomus
 )
 
-brew cask install "${APPS[@]}" || :
+brew install --cask "${APPS[@]}" || :
 
 cat <<EOS
 #####################################
