@@ -49,6 +49,7 @@ APPS=(
 	slack
 	twitch
 	zoomus
+	homebrew/cask-drivers/yubico-yubikey-manager
 )
 
 brew install --cask "${APPS[@]}" || :
