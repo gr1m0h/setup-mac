@@ -47,6 +47,7 @@ APPS=(
 	drawio
 	dropbox
 	slack
+	tor-browser
 	twitch
 	zoomus
 	homebrew/cask-drivers/yubico-yubikey-manager
