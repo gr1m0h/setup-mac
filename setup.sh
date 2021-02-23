@@ -66,7 +66,7 @@ brew install git
 
 echo "# setup"
 GITNAME=${1:-"grimoh"}
-GITEMAIL=${2:-"email@grimoh.com"}
+GITEMAIL=${2:-"dev@grimoh.net"}
 git config --global user.name "${GITNAME}"
 git config --global user.email "${GITEMAIL}"
 
