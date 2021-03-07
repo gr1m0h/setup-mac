@@ -43,14 +43,16 @@ echo "# install apps"
 APPS=(
 	bitwarden
 	brave-browser
+	deepl
 	docker
 	drawio
 	dropbox
+	mailspring
 	slack
 	tor-browser
 	twitch
-	zoomus
 	homebrew/cask-drivers/yubico-yubikey-manager
+	zoomus
 )
 
 brew install --cask "${APPS[@]}" || :
