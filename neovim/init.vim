@@ -51,4 +51,4 @@ se noundofile
 se clipboard=unnamed
 se shortmess+=I
 
-let g:python3_host_prog = '/Users/grimoh117/.asdf/shims/python3'
+let g:python3_host_prog = '$HOME/.asdf/shims/python3'
