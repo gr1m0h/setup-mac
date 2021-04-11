@@ -41,8 +41,14 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 alias c="clear"
-alias gpg="LANG=C gpg"
 alias rm="rmtrash"
+
+# neovim
+set -gx XDG_CONFIG_HOME "$HOME/.config"
+
+# asdf
+source ~/.asdf/asdf.fish
+mkdir -p ~/.config/fish/completions; and cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 
 # golang
 set -gx GO111MODULE on
