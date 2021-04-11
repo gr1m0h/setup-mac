@@ -158,7 +158,6 @@ asdf plugin add python
 asdf plugin add ruby
 asdf plugin add stern
 asdf plugin add terraform
-asdf plugin add yarn
 
 echo "# install the asdf plugin version"
 asdf install
