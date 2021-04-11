@@ -53,6 +53,7 @@ APPS=(
 	twitch
 	homebrew/cask-drivers/yubico-yubikey-manager
 	zoomus
+	zsa-wally
 )
 
 brew install --cask "${APPS[@]}" || :
@@ -147,16 +148,14 @@ asdf plugin add bitwarden
 asdf plugin add fzf
 asdf plugin add gcloud
 asdf plugin add ghq
-asdf plugin add glow https://github.com/grimoh/asdf-glow.git
 asdf plugin add gohugo
 asdf plugin add golang
-asdf plugin add gosec https://github.com/grimoh/asdf-gosec.git
 asdf plugin add jq
-asdf plugin add kind
 asdf plugin add kubectl
 asdf plugin add neovim
 asdf plugin add nodejs && bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf plugin add python
+asdf plugin add ruby
 asdf plugin add stern
 asdf plugin add terraform
 asdf plugin add yarn
