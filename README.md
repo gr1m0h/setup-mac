@@ -1,4 +1,4 @@
-# setup
+# setup-mac
 
 ![CI](https://github.com/grimoh/setup/workflows/CI/badge.svg?branch=master)
 
