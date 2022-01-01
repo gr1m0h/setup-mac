@@ -41,16 +41,12 @@ brew install "${PACKAGES[@]}" || :
 
 echo "# install apps"
 APPS=(
-	bitwarden
-	brave-browser
-	deepl
 	docker
 	drawio
-	dropbox
-	mailspring
+	obs
+	obs-virtualcam
 	slack
-	tor-browser
-	twitch
+	vivaldi
 	homebrew/cask-drivers/yubico-yubikey-manager
 	zoomus
 	zsa-wally
